@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="survey_init_inherit" inherit_id="survey.survey_init" name="Survey Start Page Inherit">
+        <xpath expr="//a[1]" position="replace">
+            <a class="btn btn-primary btn-lg"
+   role="button"
+   t-att-href="'/survey/fill/%s/%s' % (survey.access_token, answer.token)">
+                            <t t-if="survey.certificate">
+                                Start Test
+                            </t>
+                            <t t-else="">
+                                Start SS
+                            </t>
+                        </a>
+            
+        </xpath>
+     </template>
+    
+</odoo>
+

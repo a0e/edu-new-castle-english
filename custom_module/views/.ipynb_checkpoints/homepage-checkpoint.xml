@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="homepage_custom" name="Home Page Custom">
+        <t t-call="website.layout">
+            <div class="container">
+                <h2>Ciao WewO 122222Viaolaaaa </h2>
+            </div>
+        </t>
+    </template>
+</odoo>
