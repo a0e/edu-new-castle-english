@@ -27,6 +27,7 @@
         'views/account_inherit.xml',
         'views/homepage.xml',
         'views/survey_init_inherit.xml',
+        'views/portal_my_home_inherit.xml',
         
     ],
     # only loaded in demonstration mode
