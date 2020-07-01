@@ -4,8 +4,14 @@
         <xpath expr="//t[@t-call]" position="replace">
             <t t-call="portal.portal_layout">
             <t t-set="my_details" t-value="True"/>
-                </t>
-            
+            <div class="o_portal_my_home">
+                <div class="oe_structure" id="oe_structure_portal_my_home_1"/>
+                <h3>Documents</h3>
+                <div class="o_portal_docs list-group">
+                </div>
+            </div>
+            <div class="oe_structure" id="oe_structure_portal_my_home_2"/>
+        </t>            
         </xpath>
      </template>
     
