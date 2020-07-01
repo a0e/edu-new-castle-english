@@ -9,6 +9,14 @@ from odoo.http import route
 class CustomerPortalInherit(CustomerPortal):
     OPTIONAL_BILLING_FIELDS = ["zipcode", "state_id", "vat", "company_name","age"]
     MANDATORY_BILLING_FIELDS = ["name", "phone", "email", "street", "city", "country_id"]
+    
+    
+    @route(['/my', '/my/home'], type='http', auth="user", website=True)
+    def home(self, **kw):
+        values = self._prepare_portal_layout_values()
+        return request.render("custom_module.homepage_custom", values)
+        
+    
     @route(['/my/account'], type='http', auth='user', website=True)
     def account(self, redirect=None, **post):
         print('---------------*******************************************--------------------------Vola')
