@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <template id="portal_my_home_inherit" inherit_id="portal.portal_my_home" name="Portal My Home Page Inherit">
-        <xpath expr="//*[@id="oe_structure_portal_my_home_1"]" position="replace">
-            <h3>Hello Users </h3>
+        <xpath expr="//t[@t-call]" position="replace">
+            <t t-call="portal.portal_layout">
+            <t t-set="my_details" t-value="True"/>
+                </t>
+            
         </xpath>
      </template>
     
