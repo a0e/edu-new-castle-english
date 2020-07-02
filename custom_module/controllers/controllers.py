@@ -19,7 +19,6 @@ class CustomerPortalInherit(CustomerPortal):
     
     @route(['/my/account'], type='http', auth='user', website=True)
     def account(self, redirect=None, **post):
-        print('---------------*******************************************--------------------------Vola')
         values = self._prepare_portal_layout_values()
         partner = request.env.user.partner_id
         values.update({
