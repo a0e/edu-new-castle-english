@@ -3,7 +3,12 @@
     <template id="homepage_custom" name="Home Page Custom">
             <t t-call="portal.portal_layout">
             <t t-set="my_details" t-value="True"/>
+            <div id="wrap" class="oe_structure oe_empty"/>
             <h3> Hello Home Page </h3>
          </t>
     </template>
 </odoo>
+
+
+
+            
